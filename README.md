@@ -16,3 +16,18 @@ ssh
 ##Клонирование 
 
     git clone git@github.com:zdimon/wezom-python-course-5.git
+
+
+## Добавление файлов в репозиторий.
+
+    git add .
+    git commit -m 'comment'
+    git push
+
+
+
+
+
+
+
+
