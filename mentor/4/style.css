@@ -6,3 +6,8 @@
 .myc {
     border: 3px dotted gray;
 }
+
+div {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
