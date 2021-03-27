@@ -14,8 +14,9 @@
 
 var btn = $('#mybutton');
 btn.on('click',() => {
-    var mt = $('#mt').val();
-    $('#mycontent').html(mt); 
+    // var mt = $('#mt').val();
+    // $('#mycontent').html(mt); 
+    $('#userlist').append('<tr><td>gggggg</td></tr>');
 });
 
 
