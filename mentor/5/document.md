@@ -22,7 +22,9 @@ google  css background shadow
 
 ## python HTTP server IP:port
 
-    python3 -m 
+    python3 -m venv venv
+    source ./venv/bin/activate 
+    . ./venv/bin/activate
     pip install package_name
 
     IP=0-255.0-255.255.255
