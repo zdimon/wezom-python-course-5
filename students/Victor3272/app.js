@@ -13,4 +13,3 @@ document.getElementById('average').addEventListener('submit', function (event) {
   });
 
 
-
