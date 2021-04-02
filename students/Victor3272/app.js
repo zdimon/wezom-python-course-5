@@ -12,4 +12,5 @@ document.getElementById('average').addEventListener('submit', function (event) {
     document.getElementById('dest').appendChild(tr);
   });
 
+  
 
