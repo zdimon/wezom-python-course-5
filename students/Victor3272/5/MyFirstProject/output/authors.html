@@ -1,26 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-        <title>My First Site - Authors</title>
-        <meta charset="utf-8" />
+  <title>My First Site - Authors</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+  <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="My First Site - Flux ATOM" />
 </head>
+<body>
+<div id="page">
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">My First Site <strong></strong></a></h1>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-            <li><a href="/category/review.html">Review</a></li>
-        </ul></nav><!-- /#menu -->
+  <header id="header">
+    <h1><a href="/index.html">My First Site</a></h1>
+  </header>
+
+<nav id="menu">
+  <a href="/index.html">Accueil</a>
+  <a href="/archives.html">Archives</a>
+
+</nav> <!-- /#nav -->
+  <section id="content">
     <h1>Authors on My First Site</h1>
     <ul>
         <li><a href="/author/victor.html">Victor</a> (1)</li>
     </ul>
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
+  </section> <!-- /#content -->
+
+<aside id="sidebar">
+
+  <div class="widget" id="categories">
+    <h2>Catégories</h2>
+    <ul>
+      <li ><a href="/category/review.html">Review</a></li>
+    </ul>
+  </div>
+
+  
+  <div class="widget" id="blogroll">
+    <h2>Liens</h2>
+    <ul>
+      <li><a href="https://getpelican.com/">Pelican</a></li>
+      <li><a href="https://www.python.org/">Python.org</a></li>
+      <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+      <li><a href="#">You can modify those links in your config file</a></li>
+    </ul>
+  </div>
+
+    <div class="widget" id="social">
+      <h2>Réseaux sociaux</h2>
+      <ul>
+        <li><a href="#">You can add links in your config file</a></li>
+        <li><a href="#">Another social link</a></li>
+       </ul>
+    </div>
+
+</aside>
+
+  <footer id="footer">
+    <p>Propulsé par <a href="http://docs.notmyidea.org/alexis/pelican/index.html">Pelican</a>.</p>
+  </footer>
+</div> <!-- /#page -->
 </body>
 </html>

@@ -6,4 +6,4 @@ Od 2. září do 28. listopadu 2018 jsem pracoval v Praze na stavbě banky ČSOB
 
 Mapa pražského metra
 
-<img src="/images/PragueMetroMap.png" width="1024" height="768" />
+<img src="/images/Mapa-metra-Praha.gif" width="800" height="248" />
