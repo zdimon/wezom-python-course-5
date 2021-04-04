@@ -1,13 +1,9 @@
-Title: My First Review
-Date: 2010-12-03 10:20
+Title: Mapa metra
+Date: 2021-3-31 21:20
 Category: Review
 
-Following is a review of my favorite mechanical keyboard.
+Od 2. září do 28. listopadu 2018 jsem pracoval v Praze na stavbě banky ČSOB. Každy den cestoval jsem žlutou linkou metra ze stanice Vysočanská do stanice Radlická.
 
-1
-2
-3
-4
-5
-6
-7
+Mapa pražského metra
+
+<img src="/images/PragueMetroMap.png" width="1024" height="768" />
