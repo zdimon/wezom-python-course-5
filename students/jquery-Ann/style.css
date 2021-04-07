@@ -1,0 +1,19 @@
+td {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+#mi {
+    border: 5px solid red;
+    border-radius: 50%;
+}
+
+.myc {
+    border: 3px dotted gray;
+}
+
+div {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
