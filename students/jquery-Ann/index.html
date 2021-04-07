@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Students form JS</title>
+
+  <!-- 1 способ подключения стилей -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- 2 способ подключения стилей -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- 3 способ подключения стилей -->
+  <link href="style.css" rel="stylesheet">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ </head>
+ <body>
+
+  <!-- Вариант табица на HTML -->
+  <!-- 
+  <h1 contenteditable="true">Таблица Html</h1>
+  <table style="width: 100%;" contenteditable="true">
+<tbody>
+<tr>
+<td>Ввод</td>
+<td>Ввод</td>
+<td>Ввод</td>
+</tr>
+<tr>
+<td>Ввод</td>
+<td>Ввод</td>
+<td>Ввод</td>
+</tr>
+<tr>
+<td>Ввод</td>
+<td>Ввод</td>
+<td>Ввод</td>
+</tr>
+</tbody>
+</table>
+-->
+
+<h2>Students</h2>
+
+<!-- contenteditable="true" -->
+<table border="1" contenteditable="true">
+    <tr>
+        <td>Name</td>
+        <td>Prof</td>
+        <td>Rating</td>
+    </tr>
+
+    
+    <tr>
+      <td>Яна</td>
+      <td>(мед. менджмент)</td>
+      <td>0</td>
+  </tr>      
+
+</table>
+
+<p></p>
+
+<!-- Формы и классы -->
+
+First name: <input type="text" id="fname" /><br/><br/>
+Profession: <input type="text" id="lname" /><br/><br/>
+Rating: <input type="text" id="rname" /><br/><br/>
+
+<button onclick="addRow();">Добавить</button>
+
+<p></p>
+
+<!-- таблица с удалением -->
+<!--
+  <table>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+      </tr>
+
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+          </tr>
+  </table>
+-->
+
+<script src="app.js"></script>
+ </body>
+</html>
