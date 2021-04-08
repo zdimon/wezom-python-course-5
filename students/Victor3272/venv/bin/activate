@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/tor/wezom-python-course-5/students/Victor3272/venv"
+VIRTUAL_ENV="/home/victor/wezom-python-course-5/students/Victor3272/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
