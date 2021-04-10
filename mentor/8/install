@@ -10,5 +10,5 @@ django-admin startproject blog
 cd blog
 ./manage.py migrate 
 # запускаем сервер
-./manage.py startserver
+./manage.py runserver 0.0.0.0:8080
 
