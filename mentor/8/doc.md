@@ -19,3 +19,14 @@
         path('', index),
         path('admin/', admin.site.urls),
     ]
+
+## Определяем путь к шаблонам в settings.py
+
+    ...
+
+    TEMPLATES = [
+        {
+            'BACKEND': 'django.template.backends.django.DjangoTemplates',
+            'DIRS': [BASE_DIR / 'templates'],
+
+    ...
