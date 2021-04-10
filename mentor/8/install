@@ -1,0 +1,14 @@
+# установить ВО
+python3 -m venv venv
+# активируем
+. ./venv/bin/activate
+# инсталлируем джанго
+pip install django
+# создаем проект
+django-admin startproject blog 
+# сосдаем базу данных
+cd blog
+./manage.py migrate 
+# запускаем сервер
+./manage.py startserver
+
