@@ -12,7 +12,9 @@
 
     {% for row in board %}
         {% for cell in row %}
-            <div class="cell"></div>
+            <div class="cell bg-{{cell.color}}">
+                {{ cell }}
+            </div>
         {% endfor %}
     {% endfor %}
     

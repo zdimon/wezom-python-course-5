@@ -11,3 +11,11 @@
     height: 100px;
     border: 1px solid rgb(27, 75, 37); 
 }
+
+.bg-black {
+    background-color: rgb(98, 97, 97);
+}
+
+.bg-white {
+    background-color: rgb(251, 193, 193);
+}
