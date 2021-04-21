@@ -9,6 +9,12 @@
 <h1>Chess game</h1>
 
 <div class="board">
+
+    {% for row in board %}
+        {% for cell in row %}
+            <div class="cell"></div>
+        {% endfor %}
+    {% endfor %}
     
 </div>
 

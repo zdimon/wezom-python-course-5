@@ -1,5 +1,13 @@
 .board {
-    width: 800px;
-    height: 800px;
+    width: 816px;
+    height: 816px;
     border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(27, 75, 37); 
 }
