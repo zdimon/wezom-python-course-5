@@ -12,7 +12,10 @@ def make_board():
     for i in range(0,8):
         tmp = []
         for j in range(0,8):
-            tmp.append({"color": "black"})
+            if j%2 == 0:
+                tmp.append({"color": "black"})
+            else:
+                tmp.append({"color": "white"})
         board.append(tmp)
 
     return board
