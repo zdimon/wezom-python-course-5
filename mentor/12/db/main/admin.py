@@ -5,6 +5,10 @@ from django.contrib import admin
 from main.models import Page
 
 class PageAdmin(admin.ModelAdmin):
-    pass
+    list_display = ['title', 'alias', 'content', 'is_published']
+    list_editable = ['is_published']
+    search_fields = ['title']
+
+
 admin.site.register(Page, PageAdmin)
 
