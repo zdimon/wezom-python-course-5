@@ -26,4 +26,6 @@ class Page(models.Model):
 # cat.jump()
 # cat.color
 
+# ./manage.py makemigrations
+# ./manage.py migrate
 
