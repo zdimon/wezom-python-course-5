@@ -4,7 +4,7 @@ class Page(models.Model):
     title = models.CharField(max_length=250)
     alias = models.CharField(max_length=50)
     content = models.TextField()
-    image = models.ImageField("Image", upload_to="pages", height_field=300, width_field=300, blank=True, null=True)
+    image = models.ImageField(upload_to="pages", blank=True, null=True)
     is_published = models.BooleanField(default=False)
 
     def __str__(self):
