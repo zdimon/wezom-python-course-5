@@ -5,7 +5,7 @@ from django.contrib import admin
 from main.models import Page
 
 class PageAdmin(admin.ModelAdmin):
-    list_display = ['title', 'alias', 'content', 'is_published']
+    list_display = ['title', 'alias', 'content', 'is_published', 'my_image']
     list_editable = ['is_published']
     search_fields = ['title']
 

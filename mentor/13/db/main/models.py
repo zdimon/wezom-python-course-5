@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.html import mark_safe
 
 class Page(models.Model):
     title = models.CharField(max_length=250)
@@ -6,6 +7,13 @@ class Page(models.Model):
     content = models.TextField()
     image = models.ImageField(upload_to="pages", blank=True, null=True)
     is_published = models.BooleanField(default=False)
+
+    @property
+    def my_image(self):
+        try:
+            return mark_safe(f'<img width="100" src="{self.image.url}" />')
+        except:
+            return 'No image'
 
     def __str__(self):
         return self.title
