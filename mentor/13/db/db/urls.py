@@ -9,7 +9,7 @@ urlpatterns = [
     path('contact', contact),
     path('admin/', admin.site.urls),
     path('shop', shop_list),
-    path('shop/filter/bye/good', shop_list, name='shop-filter'),
+    path('shop/filter/<int:cat_id>', shop_list, name='shop-filter'),
     path('<slug:page_name>', page),
 ]
 

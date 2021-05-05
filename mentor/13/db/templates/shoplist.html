@@ -25,14 +25,26 @@
         <ul> 
         {% for cat in categories %}
            <li>
-           <a href="{% url 'shop-filter' %}">
+           <a href="{% url 'shop-filter' cat_id=cat.id %}">
                 {{ cat }}
            </a>
            </li>
         {% endfor %}
         </ul>
         </div>
-        <div class="col-10"> dsfsdfsdd</div>
+        <div class="col-10"> 
+        
+        <ul> 
+        {% for p in products %}
+           <li>
+           <a href="">
+                {{ p.name }}
+           </a>
+           </li>
+        {% endfor %}
+        </ul>
+
+        </div>
     </div>
 
 
