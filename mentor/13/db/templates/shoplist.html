@@ -31,6 +31,12 @@
            </li>
         {% endfor %}
         </ul>
+        <form method="POST" action=""> 
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" name="Save" value="Save" />
+        </form>
+
         </div>
         <div class="col-10"> 
         
