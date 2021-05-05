@@ -1,9 +1,10 @@
 from django.shortcuts import render
 from shop.models import Category, Product
-
+from shop.forms import CategoryForm
 
 def shop_list(request,cat_id=0):
     categories = Category.objects.all()
+    form = CategoryForm()
     if cat_id == 0:
         products = Product.objects.all()
     else:
