@@ -17,60 +17,33 @@
     
   {% include 'navbar.html' %}
 
-  {% if messages %}
-    <div class="row" style="padding-top: 80px">
-    <ul class="messages">
-        {% for message in messages %}
-        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-        {% endfor %}
-    </ul>
-    </div>
-{% endif %}
-
 <!-- Begin page content -->
 <main role="main" class="flex-shrink-0">
   <div class="container">
    
     <div class="row" style="padding-top: 80px">
-        <div class="col-2">
-        <ul> 
-        {% for cat in categories %}
-           <li>
-           <a href="{% url 'shop-filter' cat_id=cat.id %}">
-                {{ cat }}
-           </a>
+       
+       
 
-           </li>
-        {% endfor %}
-        </ul>
-        <form method="POST" action=""> 
-            {% csrf_token %}
-            {{ form }}
-            <input type="submit" name="Save" value="Save" />
-        </form>
-
-        </div>
-        <div class="col-10"> 
         
-        <ul> 
-        {% for p in products %}
-           <li>
-           <a href="">
-                {{ p.name }}
-           </a>
-            {% if user.is_authenticated %}
-              <a 
-              class="btn btn-success"
-              href="/add/to/cart/{{p.id}}"> Add to cart </a>
-           {% endif %}
-           </li>
-        {% endfor %}
-        </ul>
-        <form method="POST" action="{% url 'save-product' %}"> 
-            {% csrf_token %}
-            {{ form_product|crispy }}
-            <input type="submit" name="Save" value="Save" />
-        </form>
+        <div class="col-12"> 
+        <h1>My cart</h1>
+        <table>
+          <tr>
+            <td>ID</td>
+            <td>Product</td>
+            <td>Category</td>
+          </tr>
+
+          {% for i in items %}
+            <tr>
+              <td>{{ i.id }}</td>
+              <td>{{ i.product.name }}</td>
+              <td>{{ i.product.category.name  }}</td>
+            </tr>
+          {% endfor %}
+        </table>
+       
         </div>
     </div>
 

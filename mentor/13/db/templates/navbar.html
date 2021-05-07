@@ -17,6 +17,23 @@
           <a class="nav-link" href="/shop" tabindex="-1" aria-disabled="true">Shop</a>
         </li>
       </ul>
+      {% if user.is_authenticated %}
+          <span style="color: red">             <a href="/cart">
+              My cart  
+            </a> 
+            
+            <a href="/logout">
+             Logout 
+            </a>            
+            
+            </span>
+      {% else %}
+        <span style="color: red"> 
+            <a href="/registration">
+              Registration  
+            </a>
+            </span>
+      {% endif %}
       <form class="form-inline mt-2 mt-md-0">
         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>

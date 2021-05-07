@@ -1,7 +1,19 @@
 from django.shortcuts import render
-from shop.models import Category, Product
+from shop.models import Category, Product, Product2User
 from shop.forms import CategoryForm, ProductForm
 from django.shortcuts import redirect
+from django.contrib import messages
+
+def add_to_cart(request,product_id):
+    messages.add_message(request, messages.INFO, 'Thank you.')
+    user = request.user.account
+    product = Product.objects.get(id=product_id)
+    p2u = Product2User()
+    p2u.user = user
+    p2u.product = product
+    p2u.save()
+
+    return redirect('/shop')
 
 
 def save_product(request,cat_id=0):
