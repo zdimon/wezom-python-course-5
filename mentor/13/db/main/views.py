@@ -1,6 +1,14 @@
 from django.shortcuts import render
 from main.models import Page
 from django.core.mail import send_mail
+from django.shortcuts import redirect
+from django.utils import translation
+
+
+def set_locale(request, locale):
+    print(locale)
+    translation.activate(locale)
+    return redirect('/%s/' % locale)
 
 def main(request):
     #page = Page.objects.filter(alias='main')

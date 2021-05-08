@@ -4,8 +4,13 @@ from account.models import Account
 
 class Category(models.Model):
     name = models.CharField(max_length=250)
+    test = models.CharField(max_length=250, null=True, blank=True)
     def __str__(self):
-        return self.name    
+        return self.name   
+
+    def save(self, *args, **kwargs):
+        self.test = '%s (id: %s)' % (self.name, self.id)
+        super(Category, self).save(*args, **kwargs)     
 
 class Product(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)

@@ -1,9 +1,11 @@
 from django.contrib import admin
 from .models import Category, Product, Product2User
 # Register your models here.
+from modeltranslation.admin import TranslationAdmin
 
-class CategoryAdmin(admin.ModelAdmin):
-    list_display = ['name']
+
+class CategoryAdmin(TranslationAdmin):
+    list_display = ['name', 'test']
     
    
 admin.site.register(Category, CategoryAdmin)

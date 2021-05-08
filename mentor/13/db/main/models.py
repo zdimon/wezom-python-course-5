@@ -1,6 +1,17 @@
 from django.db import models
 from django.utils.html import mark_safe
 
+from django.db.models.signals import pre_save
+from django.dispatch import receiver
+from shop.models import Category
+
+@receiver(pre_save, sender=Category)
+def handle_category(sender, **kwargs):
+    print(sender)
+    print(kwargs)
+    print(kwargs['instance'])
+
+
 class Page(models.Model):
     title = models.CharField(max_length=250)
     alias = models.CharField(max_length=50)
@@ -39,4 +50,6 @@ class Page(models.Model):
 
 # ./manage.py makemigrations
 # ./manage.py migrate
+
+
 
